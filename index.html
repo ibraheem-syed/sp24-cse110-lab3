@@ -3,23 +3,30 @@
   <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-32x32.png">
+    <link rel="stylesheet" href="style.css"/>
     <title>CSE 110 Meeting Minutes 4/10</title>
+    <style>
+        /* Define a CSS class with the desired color mixing */
+        .light-green-text {
+            color: color-mix(blend, rgb(0, 255, 0), rgb(255, 255, 255) 80%, rgb(255, 255, 255));
+        }
+    </style>
   </head>
   
     <body>
         <header>
-            <h1>CSE 110 Meeting Minutes 4/10</h1>
-            <h2>Brainstorming Session:</h2>
+            <h1 style="color:black">CSE 110 Meeting Minutes 4/10</h1>
+            <h2 style="color:rgb(91, 34, 34)">Brainstorming Session:</h2>
             <nav>
-                <a href="https://docs.google.com/document/u/0/">Google doc</a>
+                <a style="background-color:hsl(147, 50%, 47%);" href="https://docs.google.com/document/u/0/">Google doc</a>
             </nav>
-                <p>Audio recording of meeting:</p> <br>
+                <p style="background-color:#3cb371;">Audio recording of meeting:</p> <br>
                 <audio controls>
                     <source src="meeting.mp3" type="audio/mpeg">
                   Your browser does not support the audio element.
                   </audio>
                   <br>
-                  <p>Video recording of meeting:</p>
+                  <p style="background-color:#3cb371;">Video recording of meeting:</p>
                   <video width="400" controls>
                     <source src="recording.mp4" type="video/mp4">
                     Your browser does not support HTML video.
@@ -27,7 +34,8 @@
           </header>
           <main>
         <section>
-            <h3>Agenda:</h3>
+        
+            <h3 style="color: color(display-p3 0.8 0.2 0.3 / 0.7)">Agenda:</h3>
             <ul>
                 <li><em>Unfinished Business</em></li>
                 <li>New Business</li>
@@ -36,7 +44,7 @@
         </section>
     </main>
         <div>
-            <p><b>Unfinished Business:</b></p>
+            <p class="element"><b>Unfinished Business:</b></p>
             <ol>
                 <li><span style="color:red">CSE 110 Lab</span></li>
                 <li><i>CSE 110 Video</i></li>
