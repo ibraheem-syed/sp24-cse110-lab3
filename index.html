@@ -5,23 +5,23 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-32x32.png">
     <link rel="stylesheet" href="style.css"/>
     <title>CSE 110 Meeting Minutes 4/10</title>
-    <style>
-        /* Define a CSS class with the desired color mixing */
-        .light-green-text {
-            color: color-mix(blend, rgb(0, 255, 0), rgb(255, 255, 255) 80%, rgb(255, 255, 255));
-        }
-    </style>
+    
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   
     <body>
         <header>
-            <h1 style="color:black">CSE 110 Meeting Minutes 4/10</h1>
-            <h2 style="color:rgb(91, 34, 34)">Brainstorming Session:</h2>
-            <nav>
-                <a style="background-color:hsl(147, 50%, 47%);" href="https://docs.google.com/document/u/0/">Google doc</a>
-            </nav>
-                <p style="background-color:#3cb371;">Audio recording of meeting:</p> <br>
-                <audio controls>
+            <h1 id="sticky" style="color:black">CSE 110 Meeting Minutes 4/10</h1>
+            <h2 id="stuck" style="color:rgb(91, 34, 34)">Brainstorming Session:</h2>
+            <div id="top">    
+                <nav>
+                    <a style="background-color:hsl(147, 50%, 47%);" href="https://docs.google.com/document/u/0/">Google doc</a>
+                </nav>
+                    <p style="background-color:#3cb371;">Audio recording of meeting:</p> <br>
+                  <audio controls>
                     <source src="meeting.mp3" type="audio/mpeg">
                   Your browser does not support the audio element.
                   </audio>
@@ -31,9 +31,10 @@
                     <source src="recording.mp4" type="video/mp4">
                     Your browser does not support HTML video.
                   </video>
+            </div>
           </header>
           <main>
-        <section>
+        <section class="ag">
         
             <h3 style="color: color(display-p3 0.8 0.2 0.3 / 0.7)">Agenda:</h3>
             <ul>
@@ -45,14 +46,14 @@
     </main>
         <div>
             <p class="element"><b>Unfinished Business:</b></p>
-            <ol>
+            <ol class="ol">
                 <li><span style="color:red">CSE 110 Lab</span></li>
                 <li><i>CSE 110 Video</i></li>
             </ol>
         </div>
         <hr>
 
-        <div>
+        <div class="box">
             <p><strong>New Business:</strong></p>
             <ul>
                 <li>Learn java<br>script</li>
@@ -61,7 +62,7 @@
             <img src="https://i.pinimg.com/originals/45/5e/4a/455e4abfe84248f98638211281de656f.jpg" alt="Javascript roadmap" width="500" height="600">
         </div>
 
-        <form>
+        <form id="form">
             <fieldset>
                 <h2>Sign in:</h2>
                 <input type="text" id="fname" name="fname">
@@ -82,7 +83,7 @@
                 <textarea id="feedback" name="feedback" rows="4" cols="50">Feedback here</textarea> <br>
                 <p>Choose your Framework:</p>
                 <input list="Framework" name="Frameworks" id="Frameworks">
-                
+            </fieldset>
                 <datalist id="Framework">
                     <option value="react">
                     <option value="angular">
@@ -98,10 +99,9 @@
                 </select>
                 <br>
                 <button type="button" onclick="alert('Submitted')">Click to submit</button>
-            </fieldset>
         </form>
         <footer>
-            <details>
+            <details class="foot">
                 <summary>Decide on day to meet next</summary>
                 <p>Sunday 5 pm</p>
             </details>
