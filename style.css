@@ -11,4 +11,132 @@
   /* Use the CSS variable with a fallback */
   .element {
     color: var(--textcolor, green); /* Use the variable with a fallback */
+    background-color: #567895;
+    width: 50%;
+    margin: 10px 19%; 
   }
+
+  .box {
+    background-color: #567895;
+    width: 50%;
+    border-style: solid; 
+    border-color: #1a481a; 
+    border-width: 7px; 
+    border-radius: 5px;
+    margin: 10px 19%; 
+    display: none;
+  }
+
+  #form {
+    background-color: #75828e;
+    width: 752px;
+    margin: 10px 19%; 
+    
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    padding-left: 30px; 
+    padding-right: 23px; 
+    display:flex;
+    flex-direction: column;
+  }
+
+  .ol {
+    background-color: #75828e;
+    width: 712px;
+    margin: 10px 19%; 
+
+    padding: 20px 20px 30px 23px;
+  }
+
+  section.ag {
+    background-color: #567895;
+    width: 752px;
+    max-width: 752px;
+    min-width:752px;
+    margin-top: 10px; /* 10 pixels of top margin */
+    margin-bottom: 20px; /* 20 pixels of bottom margin */
+    margin-left: 19%; /* Left margin as a percentage of the containing element's width */
+    margin-right: 0; /* No right margin */
+    display:block;
+  }
+
+  .foot {
+    background-color: #567895;
+    width: 50%;
+    margin: auto;
+  }
+
+  h1 {
+        text-align: center;
+        text-decoration: underline;
+     }
+
+    h2 {
+        text-align: center;
+    }
+
+    video {
+        height:250px;
+        max-height:250px;
+    }
+
+    #sticky {
+        position: sticky;
+        top:20px;
+    }
+
+    #stuck {
+        position:static;
+    }
+
+    button:hover {
+        color:blue;
+    }
+
+    button:active {
+        color:red;
+    }
+
+    fieldset,datalist, select {
+        justify-content: center;
+    }
+
+    #top {
+        display:grid;
+        justify-items: center;
+    }
+
+    [href^="https://"] {
+        justify-self: center;
+    }
+
+    nav ~ p{
+        justify-self: center;
+    }
+
+    audio {
+        justify-self: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        .ag {
+            background-color: #567895;
+            width: 752px;
+            max-width: 730px;
+            min-width:700px;
+            margin-top: 10px; /* 10 pixels of top margin */
+            margin-bottom: 20px; /* 20 pixels of bottom margin */
+            margin-left: 19%; /* Left margin as a percentage of the containing element's width */
+            margin-right: 0; /* No right margin */
+            display:block;
+          }
+    }
+
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #sticky + #stuck {
+        background-color: aqua;
+    }
+    
