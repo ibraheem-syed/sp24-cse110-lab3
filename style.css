@@ -1,9 +1,4 @@
 
-  .light-green-background {
-    background-color: color-mix(blend, rgb(0, 255, 0), rgb(255, 255, 255) 80%, rgb(255, 255, 255));
-    /* Adjust the color mixing as needed */
-}
-
 :root {
     --textcolor: #00ff00; /* Fallback value */
   }
